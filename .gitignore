@@ -1,0 +1,7 @@
+# IDE
+.idea/
+
+# wrangler files
+.wrangler
+.dev.vars*
+.env*
