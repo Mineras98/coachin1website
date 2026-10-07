@@ -512,3 +512,33 @@ footer a:hover { color: var(--text); }
 .nav-links .lang-menu a:hover { background: var(--surface2); text-decoration: none; }
 .nav-links .lang-menu a[aria-current="page"] { color: var(--lime); font-weight: 700; }
 @media (max-width: 420px) { .nav-links { gap: 12px; } }
+
+/* ── Early-access join steps ─────────────────────── */
+.join-steps { list-style: none; counter-reset: join; display: flex; flex-direction: column; gap: 10px; margin-bottom: 6px; }
+.join-steps li {
+  counter-increment: join;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: rgba(11,26,22,0.55);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 14px 16px;
+}
+.join-steps li::before {
+  content: counter(join);
+  flex-shrink: 0;
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 28px; height: 28px; border-radius: 50%;
+  background: var(--lime); color: #0b1a16; font-weight: 800; font-size: 0.85rem;
+}
+.join-steps li > div { flex: 1; min-width: 0; }
+.join-steps strong { display: block; color: var(--heading); font-size: 0.95rem; }
+.join-steps span { color: var(--muted); font-size: 0.85rem; line-height: 1.5; }
+.join-steps .btn { flex-shrink: 0; }
+@media (max-width: 520px) {
+  .join-steps li { flex-wrap: wrap; }
+  .join-steps .btn { width: 100%; text-align: center; }
+}
+.offer .join-steps + .fine { margin-top: 16px; }
+.offer .fine + .fine { margin-top: 6px; }
