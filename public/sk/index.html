@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CoachIn1 – Aplikácia pre trénerov výživy a tréningu</title>
+  <meta name="description" content="V CoachIn1 tvoria fitness a výživoví tréneri jedálničky a tréningové plány, priraďujú ich klientom a vidia každý tréning, ktorý klienti zapíšu. Predbežný prístup pre Android a iPhone – zadarmo pre prvých 20 trénerov." />
+  <meta name="theme-color" content="#0b1a16" />
+
+  <link rel="canonical" href="https://coachin1.com/sk/" />
+  <link rel="alternate" hreflang="en" href="https://coachin1.com/" />
+  <link rel="alternate" hreflang="de" href="https://coachin1.com/de/" />
+  <link rel="alternate" hreflang="cs" href="https://coachin1.com/cs/" />
+  <link rel="alternate" hreflang="sk" href="https://coachin1.com/sk/" />
+  <link rel="alternate" hreflang="x-default" href="https://coachin1.com/" />
+  <link rel="icon" href="/icon.png" />
+  <link rel="preload" as="image" href="/img/coach-client.webp" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="sk_SK" />
+  <meta property="og:site_name" content="CoachIn1" />
+  <meta property="og:title" content="CoachIn1 – výživa a tréning tvojich klientov v jednej aplikácii" />
+  <meta property="og:description" content="Tvor jedálničky a tréningové plány, pozývaj klientov e-mailom a sleduj každú sériu, ktorú zapíšu. Predbežný prístup pre Android a iPhone." />
+  <meta property="og:url" content="https://coachin1.com/sk/" />
+  <meta property="og:image" content="https://coachin1.com/icon.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="CoachIn1" />
+  <meta name="twitter:description" content="Aplikácia na koučovanie výživy a tréningu – pre trénerov a ich klientov. Predbežný prístup pre Android a iPhone." />
+  <meta name="twitter:image" content="https://coachin1.com/icon.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "CoachIn1",
+    "inLanguage": "sk",
+    "operatingSystem": "Android, iOS",
+    "applicationCategory": "HealthApplication",
+    "url": "https://coachin1.com/sk/",
+    "image": "https://coachin1.com/icon.png",
+    "screenshot": [
+      "https://coachin1.com/img/coach-client.webp",
+      "https://coachin1.com/img/meal-plans.webp",
+      "https://coachin1.com/img/training-plan.webp",
+      "https://coachin1.com/img/workout-log.webp"
+    ],
+    "description": "CoachIn1 je aplikácia pre výživových a fitness trénerov v predbežnom prístupe pre Android a iPhone. Tréneri tvoria jedálničky (potraviny s kalóriami, bielkovinami, sacharidmi a tukmi) a tréningové plány (silové a kardio tréningy), pozývajú klientov e-mailom a priraďujú im plány. Klienti sa riadia svojimi plánmi a zapisujú tréningy sériu po sérii v kg alebo lb, takže tréner vidí, čo sa naozaj odcvičilo. Tréneri môžu klientom nechávať poznámky, ktoré si klienti odškrtávajú. Výživa aj tréning sú v jednej aplikácii a dáta sa ukladajú v EÚ.",
+    "featureList": [
+      "Tvorba jedálničkov s makroživinami",
+      "Tvorba tréningových plánov (sila a kardio)",
+      "Knižnica plánov na opakované použitie",
+      "Pozvánky pre klientov e-mailom",
+      "Záznam tréningov (série, opakovania, váha v kg alebo lb, kardio)",
+      "Poznámky trénera pre klientov",
+      "Prehľad tréningov klientov pre trénera",
+      "Dáta uložené v EÚ"
+    ],
+    "offers": {
+      "@type": "AggregateOffer",
+      "lowPrice": "0",
+      "highPrice": "49.99",
+      "priceCurrency": "EUR",
+      "offerCount": "4",
+      "description": "Zadarmo až pre 2 klientov; Starter 9,99 €, Pro 29,99 € a Studio 49,99 € mesačne až pre 10, 30 a 75 klientov. Počas predbežného prístupu zadarmo pre prvých 20 trénerov; prvých 100 platiacich trénerov si ponechá 50 % zľavu, kým im predplatné beží."
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Micro Macro Nutri Labs",
+      "url": "https://micromacronutrilabs.com/"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "inLanguage": "sk",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Je CoachIn1 dostupný aj pre iPhone?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Áno. Predbežný prístup je otvorený pre Android aj iPhone, pre trénerov aj ich klientov." }
+      },
+      {
+        "@type": "Question",
+        "name": "Koľko CoachIn1 stojí?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Počas predbežného prístupu je CoachIn1 zadarmo pre prvých 20 trénerov. Potom tréneri platia podľa počtu klientov: zadarmo až pre 2 klientov, ďalej 9,99 €, 29,99 € alebo 49,99 € mesačne až pre 10, 30 alebo 75 klientov. Prvých 100 platiacich trénerov, vrátane všetkých z predbežného prístupu, si ponechá 50 % zľavu, kým im predplatné beží." }
+      },
+      {
+        "@type": "Question",
+        "name": "Je koučovanie výživy platený doplnok?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Nie. Jedálničky s makroživinami aj tréningové plány sú súčasťou CoachIn1." }
+      },
+      {
+        "@type": "Question",
+        "name": "Kde sa ukladajú dáta CoachIn1?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Dáta CoachIn1 sa ukladajú v Supabase v EÚ (Írsko) a aplikácia je prevádzkovaná z Nemecka podľa GDPR." }
+      },
+      {
+        "@type": "Question",
+        "name": "Ako sa klienti pripoja k CoachIn1?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Tréner pridá klienta menom a e-mailom. Klient dostane pozvánku, nainštaluje si aplikáciu a vidí plány, ktoré mu tréner priradil." }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="tick" viewBox="0 0 16 16"><path d="M3 8.5l3.2 3L13 4.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<nav>
+  <div class="container">
+    <a href="#" class="nav-brand"><img src="/icon.png" alt="" /> CoachIn1</a>
+    <ul class="nav-links">
+      <li class="hide-mobile"><a href="#features">Funkcie</a></li>
+      <li class="hide-mobile"><a href="#how-it-works">Ako to funguje</a></li>
+      <li class="hide-mobile"><a href="#pricing">Ceny</a></li>
+      <li class="hide-mobile"><a href="#faq">Otázky</a></li>
+      <li>
+        <details class="lang">
+          <summary aria-label="Jazyk">SK</summary>
+          <div class="lang-menu">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/cs/" hreflang="cs" lang="cs">Čeština</a>
+            <a href="/sk/" hreflang="sk" lang="sk" aria-current="page">Slovenčina</a>
+          </div>
+        </details>
+      </li>
+      <li><a href="#early-access" class="btn btn-primary btn-sm">Získať prístup</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<!-- ══════════════════════════════════════════════════════
+     HERO
+══════════════════════════════════════════════════════ -->
+<header class="hero">
+  <div class="container">
+    <div class="hero-copy">
+      <span class="badge"><span class="dot"></span> Predbežný prístup pre Android a iPhone</span>
+      <h1>Koučuj výživu <em>aj</em> tréning v jednej aplikácii</h1>
+      <p class="lead">Tvor jedálničky a tréningové plány, odovzdaj ich klientom a sleduj každú sériu, ktorú naozaj odcvičili. Žiadne tabuľky, žiadne PDF, žiadne chaty plné screenshotov.</p>
+      <div class="cta-row">
+        <a href="#early-access" class="btn btn-primary">Zabezpeč si jedno z 20 miest</a>
+        <a href="#features" class="btn btn-ghost">Pozrieť aplikáciu</a>
+      </div>
+      <ul class="perks">
+        <li><svg width="16" height="16"><use href="#tick"/></svg> Zadarmo v predbežnom prístupe</li>
+        <li><svg width="16" height="16"><use href="#tick"/></svg> 50 % zľava natrvalo</li>
+        <li><svg width="16" height="16"><use href="#tick"/></svg> Dáta uložené v EÚ</li>
+      </ul>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="phone back"><img src="/img/clients.webp" alt="" width="918" height="2093" /></div>
+      <div class="phone front"><img src="/img/coach-client.webp" alt="" width="918" height="2093" /></div>
+    </div>
+  </div>
+</header>
+
+
+<!-- ══════════════════════════════════════════════════════
+     PROBLEM → SOLUTION
+══════════════════════════════════════════════════════ -->
+<section class="block">
+  <div class="container">
+    <div class="section-label">Prečo CoachIn1</div>
+    <h2 class="section-title">Tvoje koučovanie preč zo skupinového chatu</h2>
+    <p class="section-sub">Väčšina trénerov žongluje s tabuľkou, PDF a WhatsAppom. CoachIn1 dáva plán, záznamy aj spätnú väzbu na jedno miesto.</p>
+    <div class="pains">
+      <div class="pain">
+        <div class="before">Predtým</div>
+        <h3>Plány ležia v PDF a tabuľkách</h3>
+        <p>Každá zmena znamená nový súbor – a klienti otvárajú ten starý.</p>
+        <div class="after"><strong>Teraz:</strong> uprav plán raz a aplikácia tvojho klienta sa aktualizuje.</div>
+      </div>
+      <div class="pain">
+        <div class="before">Predtým</div>
+        <h3>Spätná väzba sa v chate stratí</h3>
+        <p>Čo si povedal v pondelok na hovore, je v piatok o 200 správ vyššie.</p>
+        <div class="after"><strong>Teraz:</strong> poznámky sú nad plánom klienta, kým ich neodškrtne.</div>
+      </div>
+      <div class="pain">
+        <div class="before">Predtým</div>
+        <h3>Nevieš, čo sa dvíhalo</h3>
+        <p>„Tréning išiel dobre“ ti nepovie váhy, opakovania ani série.</p>
+        <div class="after"><strong>Teraz:</strong> každá séria, ktorú klient zapíše, sa objaví v jeho profile.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════
+     FEATURE SHOWCASE
+══════════════════════════════════════════════════════ -->
+<section class="block showcase" id="features">
+  <div class="container">
+    <div class="section-label">Funkcie</div>
+    <h2 class="section-title">Všetko, čo tréner potrebuje, nič navyše</h2>
+    <p class="section-sub">Výživa aj tréning v jednej aplikácii, bez plateného doplnku za jedálničky.</p>
+
+    <div class="feature-row">
+      <div class="feature-media"><div class="phone"><img src="/img/meal-plans.webp" alt="Zoznam jedálničkov v CoachIn1 s kalóriami, bielkovinami, sacharidmi a tukmi pri každom pláne" width="918" height="2093" loading="lazy" /></div></div>
+      <div class="feature-copy">
+        <div class="kicker">Jedálničky</div>
+        <h3>Jedálničky s makroživinami za pár minút</h3>
+        <p>Zoskup potraviny s množstvom do jedál. Kalórie, bielkoviny, sacharidy a tuky sa sčítavajú, kým plán tvoríš.</p>
+        <ul class="ticks">
+          <li><svg width="14" height="14"><use href="#tick"/></svg> Denné súčty sa menia s každou úpravou</li>
+          <li><svg width="14" height="14"><use href="#tick"/></svg> Ukladaj plány do knižnice a používaj ich znova</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="feature-row flip">
+      <div class="feature-media"><div class="phone"><img src="/img/training-plan.webp" alt="Tréningový plán v CoachIn1 s tréningami push, pull a nohy, sériami a kardiom" width="918" height="2093" loading="lazy" /></div></div>
+      <div class="feature-copy">
+        <div class="kicker">Tréningové plány</div>
+        <h3>Tréningové plány podľa teba</h3>
+        <p>Usporiadaj silové cviky a kardio do tréningov, so sériami, rozsahom opakovaní, trvaním a intenzitou.</p>
+        <ul class="ticks">
+          <li><svg width="14" height="14"><use href="#tick"/></svg> Push/pull/nohy, horná/dolná časť tela alebo vlastný split</li>
+          <li><svg width="14" height="14"><use href="#tick"/></svg> Súčty tréningov, sérií a minút kardia</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="feature-row">
+      <div class="feature-media"><div class="phone"><img src="/img/client-plan.webp" alt="Pohľad klienta v CoachIn1 s poznámkami od trénera nad tréningovým plánom" width="918" height="2093" loading="lazy" /></div></div>
+      <div class="feature-copy">
+        <div class="kicker">Poznámky trénera</div>
+        <h3>Poznámky z hovoru presne tam, kam sa klienti pozerajú</h3>
+        <p>Po hovore zanechaj poznámky. Sú prvá vec, ktorú klient uvidí – nad svojím plánom.</p>
+        <ul class="ticks">
+          <li><svg width="14" height="14"><use href="#tick"/></svg> Klienti si splnené poznámky odškrtávajú</li>
+          <li><svg width="14" height="14"><use href="#tick"/></svg> Vidíš, čo je hotové – a kedy</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="feature-row flip">
+      <div class="feature-media"><div class="phone"><img src="/img/workout-log.webp" alt="Klient zapisuje drepy sériu po sérii v kg, s hodnotami z minula" width="918" height="2093" loading="lazy" /></div></div>
+      <div class="feature-copy">
+        <div class="kicker">Záznam tréningov</div>
+        <h3>Klienti zapisujú každú sériu</h3>
+        <p>Opakovania a váha pri každej sérii, priamo z plánu – s hodnotami z minulého tréningu hneď vedľa.</p>
+        <ul class="ticks">
+          <li><svg width="14" height="14"><use href="#tick"/></svg> Kilogramy alebo libry, podľa voľby klienta</li>
+          <li><svg width="14" height="14"><use href="#tick"/></svg> Každý zapísaný tréning vidíš v jeho profile</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════
+     ROLES
+══════════════════════════════════════════════════════ -->
+<section class="block" style="padding-top:24px;">
+  <div class="container">
+    <div class="section-label">Pre obe strany</div>
+    <h2 class="section-title">Jedna aplikácia pre trénera aj klienta</h2>
+    <p class="section-sub">Tréneri plánujú. Klienti plnia a zapisujú. Všetci vidia to isté.</p>
+
+    <div class="roles">
+      <div class="role-card">
+        <h3>🧑‍🏫 Pre trénerov</h3>
+        <ul class="role-list">
+          <li><span class="ic">🍽️</span><div><strong>Tvorba jedálničkov</strong><span class="d">Zoskup potraviny s množstvom, kalóriami, bielkovinami, sacharidmi a tukmi do jedál. Denné súčty sa menia, kým plán tvoríš.</span></div></li>
+          <li><span class="ic">🏋️</span><div><strong>Tvorba tréningových plánov</strong><span class="d">Silové cviky so sériami a rozsahom opakovaní, kardio s trvaním a intenzitou, usporiadané do tréningov.</span></div></li>
+          <li><span class="ic">📚</span><div><strong>Knižnica plánov</strong><span class="d">Ukladaj plány ako šablóny a používaj ich pri viacerých klientoch.</span></div></li>
+          <li><span class="ic">✉️</span><div><strong>Pozvánky pre klientov</strong><span class="d">Pridaj klienta menom a e-mailom – dostane pozvánku a objaví sa v tvojom zozname.</span></div></li>
+          <li><span class="ic">📝</span><div><strong>Poznámky pre klientov</strong><span class="d">Po hovore zanechaj poznámky. Klient ich uvidí ako prvé a odškrtá ich; ty vidíš, čo je hotové.</span></div></li>
+          <li><span class="ic">🔎</span><div><strong>Prehľad klienta</strong><span class="d">Každý tréning, ktorý klient zapísal, sériu po sérii.</span></div></li>
+        </ul>
+      </div>
+
+      <div class="role-card">
+        <h3>🙋 Pre klientov</h3>
+        <ul class="role-list">
+          <li><span class="ic">📋</span><div><strong>Tvoje plány vždy pri tebe</strong><span class="d">Jedálniček a tréningový plán od tvojho trénera, v tvojom telefóne.</span></div></li>
+          <li><span class="ic">✅</span><div><strong>Záznam tréningov</strong><span class="d">Zapisuj opakovania a váhu každej série v kg alebo lb a k tomu kardio – priamo zo svojho plánu.</span></div></li>
+          <li><span class="ic">📝</span><div><strong>Poznámky od trénera</strong><span class="d">Čo ste prebrali na hovore, hneď hore v tvojom pláne. Každú odškrtni, keď ju splníš.</span></div></li>
+          <li><span class="ic">🔐</span><div><strong>Len na pozvánku</strong><span class="d">Klientske účty vznikajú z pozvánky tvojho trénera – žiadne verejné profily.</span></div></li>
+          <li><span class="ic">📱</span><div><strong>Android aj iPhone</strong><span class="d">Tvoji klienti môžu mať akýkoľvek telefón a ty vidíš rovnaké dáta.</span></div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════
+     HOW IT WORKS
+══════════════════════════════════════════════════════ -->
+<section class="block steps-section" id="how-it-works">
+  <div class="container">
+    <div class="section-label">Ako to funguje</div>
+    <h2 class="section-title" style="margin-bottom:44px;">Od plánu k pokroku v štyroch krokoch</h2>
+    <div class="steps">
+      <div class="step"><h4>Tréner sa zaregistruje</h4><p>Vytvor si trénerský účet so svojím e-mailom.</p></div>
+      <div class="step"><h4>Pozvi klientov</h4><p>Zadaj meno a e-mail klienta. Dostane pozvánku.</p></div>
+      <div class="step"><h4>Priraď plány</h4><p>Vytvor alebo použi jedálničky a tréningové plány a priraď ich každému klientovi.</p></div>
+      <div class="step"><h4>Klient zapisuje</h4><p>Klienti zapisujú svoje tréningy; ty ich vidíš v ich profile.</p></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════
+     EARLY ACCESS
+══════════════════════════════════════════════════════ -->
+<section class="block" id="early-access">
+  <div class="container">
+    <div class="offer">
+      <div>
+        <span class="badge"><span class="dot"></span> Len pre 20 trénerov</span>
+        <h2>Buď jedným z našich prvých 20 trénerov</h2>
+        <p>CoachIn1 je v predbežnom prístupe pre Android a iPhone. Pošli nám krátky e-mail so svojím menom, telefónom (Android alebo iPhone) a počtom klientov, ktorých koučuješ, a pošleme ti prístup.</p>
+        <a class="btn btn-primary" href="mailto:info@micromacronutrilabs.com?subject=CoachIn1%20predbe%C5%BEn%C3%BD%20pr%C3%ADstup&amp;body=Dobr%C3%BD%20de%C5%88%2C%0A%0Am%C3%A1m%20z%C3%A1ujem%20o%20predbe%C5%BEn%C3%BD%20pr%C3%ADstup%20do%20CoachIn1.%0A%0AMeno%3A%20%0ATelef%C3%B3n%20(Android%20alebo%20iPhone)%3A%20%0APo%C4%8Det%20klientov%3A%20%0A">Požiadať o prístup</a>
+        <p class="fine">Alebo napíš na <a href="mailto:info@micromacronutrilabs.com?subject=CoachIn1">info@micromacronutrilabs.com</a></p>
+      </div>
+      <ul class="offer-list">
+        <li><span class="big">0 €</span><div><strong>Zadarmo v predbežnom prístupe</strong><span>Používaj všetky funkcie so všetkými svojimi klientmi.</span></div></li>
+        <li><span class="big">−50 %</span><div><strong>50 % zľava natrvalo</strong><span>Keď začnú platené plány, tvoja zľava zostane.</span></div></li>
+        <li><span class="big">1:1</span><div><strong>Priamy kontakt s vývojárom</strong><span>Povedz nám, čo potrebuješ, a pomôž rozhodnúť, čo vznikne ďalej.</span></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════
+     PRICING
+══════════════════════════════════════════════════════ -->
+<section class="block" id="pricing" style="padding-top:24px;">
+  <div class="container">
+    <div class="section-label">Ceny</div>
+    <h2 class="section-title">Plány, ktoré rastú s tvojím koučovaním</h2>
+    <p class="section-sub">Platíš podľa počtu klientov, ktorých koučuješ. Pre tvojich klientov je aplikácia vždy zadarmo. Tieto plány začnú po skončení predbežného prístupu.</p>
+
+    <div class="founder-banner">
+      <span class="big">−50 %</span>
+      <p><strong>Zakladateľská cena pre prvých 100 trénerov.</strong> Prvých 100 trénerov s plateným plánom si ponechá 50 % zľavu, kým im predplatné beží – aj keď prejdú na väčší plán. Tréneri z predbežného prístupu sú zakladatelia automaticky.</p>
+    </div>
+
+    <div class="plans">
+      <div class="plan">
+        <h3>Free</h3>
+        <div class="clients">Až 2 klienti</div>
+        <div class="price">0 €</div>
+        <div class="yearly">Vyskúšaj si to so skutočnými klientmi</div>
+      </div>
+      <div class="plan">
+        <h3>Starter</h3>
+        <div class="clients">Až 10 klientov</div>
+        <div class="price">9,99 € <small>/ mesiac</small></div>
+        <div class="yearly">alebo 99,99 € / rok</div>
+        <div class="founder">Zakladateľ: 4,99 € / mesiac<span>pre prvých 100 trénerov</span></div>
+      </div>
+      <div class="plan featured">
+        <span class="tag">Najobľúbenejší</span>
+        <h3>Pro</h3>
+        <div class="clients">Až 30 klientov</div>
+        <div class="price">29,99 € <small>/ mesiac</small></div>
+        <div class="yearly">alebo 299,99 € / rok</div>
+        <div class="founder">Zakladateľ: 14,99 € / mesiac<span>pre prvých 100 trénerov</span></div>
+      </div>
+      <div class="plan">
+        <h3>Studio</h3>
+        <div class="clients">Až 75 klientov</div>
+        <div class="price">49,99 € <small>/ mesiac</small></div>
+        <div class="yearly">alebo 499,99 € / rok</div>
+        <div class="founder">Zakladateľ: 24,99 € / mesiac<span>pre prvých 100 trénerov</span></div>
+      </div>
+    </div>
+
+    <p class="plans-note">Každý plán obsahuje jedálničky s makroživinami, tréningové plány, poznámky trénera a záznamy tréningov. Žiadne doplnky. Platené plány môžeš 14 dní skúšať zadarmo a pri ročnej platbe máš 2 mesiace zadarmo.</p>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════
+     FAQ
+══════════════════════════════════════════════════════ -->
+<section class="block" id="faq" style="padding-top:24px;">
+  <div class="container">
+    <div class="section-label">Otázky</div>
+    <h2 class="section-title" style="margin-bottom:40px;">Na čo sa tréneri pýtajú</h2>
+    <div class="faq">
+      <details>
+        <summary>Je CoachIn1 dostupný aj pre iPhone?</summary>
+        <p>Áno. Predbežný prístup je otvorený pre Android aj iPhone, pre trénerov aj ich klientov.</p>
+      </details>
+      <details>
+        <summary>Koľko to stojí?</summary>
+        <p>Počas predbežného prístupu je CoachIn1 zadarmo pre prvých 20 trénerov. Potom tréneri platia podľa počtu klientov: zadarmo až pre 2 klientov, ďalej 9,99 €, 29,99 € alebo 49,99 € mesačne až pre 10, 30 alebo 75 klientov. Prvých 100 platiacich trénerov, vrátane všetkých z predbežného prístupu, si ponechá 50 % zľavu, kým im predplatné beží. Pozri <a href="#pricing">ceny</a>.</p>
+      </details>
+      <details>
+        <summary>Platí sa za výživu zvlášť?</summary>
+        <p>Nie. Jedálničky s makroživinami aj tréningové plány sú súčasťou CoachIn1.</p>
+      </details>
+      <details>
+        <summary>Kde sa ukladajú dáta mojich klientov?</summary>
+        <p>V Supabase v EÚ (Írsko). CoachIn1 je prevádzkovaný z Nemecka podľa GDPR. Podrobnosti nájdeš v <a href="#privacy-policy">zásadách ochrany osobných údajov</a>.</p>
+      </details>
+      <details>
+        <summary>Ako sa pripoja moji klienti?</summary>
+        <p>Pridáš klienta menom a e-mailom. Dostane pozvánku, nainštaluje si aplikáciu a uvidí plány, ktoré si mu priradil.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════
+     LEGAL
+══════════════════════════════════════════════════════ -->
+<div class="legal-wrapper" id="legal">
+  <div class="legal-title">Právne informácie a ochrana údajov</div>
+  <p class="section-sub" style="margin-bottom:28px;">Tento preklad slúži na informáciu. Právne záväzné je <a href="/#legal" hreflang="en">anglické znenie</a>.</p>
+
+  <!-- Privacy Policy -->
+  <section class="legal-card" id="privacy-policy">
+    <h2>🔒 Zásady ochrany osobných údajov</h2>
+
+    <h3>Kto sme</h3>
+    <p>Micro Macro Nutri Labs (Martin Fabian, pozri Impressum nižšie) prevádzkuje mobilnú aplikáciu CoachIn1 („aplikácia“). Aplikácia spája trénerov s ich klientmi. Tieto zásady vysvetľujú, aké údaje zhromažďujeme, kto ich môže vidieť, ako ich používame a aké máš práva.</p>
+
+    <h3>Aké údaje zhromažďujeme</h3>
+    <ul>
+      <li><strong>Údaje o účte</strong> – tvoja e-mailová adresa, meno a heslo. Heslá ukladá náš poskytovateľ overovania len v hashovanej podobe a my ich nikdy nevidíme.</li>
+      <li><strong>Údaje o klientoch zadané trénermi</strong> – keď tréner pridá klienta, zadá jeho meno a e-mailovú adresu. Tie slúžia na odoslanie pozvánky a na prepojenie klienta s trénerom.</li>
+      <li><strong>Jedálničky</strong> – jedlá a potraviny s množstvom, kalóriami, bielkovinami, sacharidmi a tukmi, ktoré tréneri vytvoria a priradia klientom.</li>
+      <li><strong>Tréningové plány</strong> – tréningy, cviky, série, rozsahy opakovaní, trvanie a intenzita kardia a poznámky, ktoré tréneri vytvoria a priradia klientom.</li>
+      <li><strong>Záznamy tréningov</strong> – tréningy, ktoré klienti zapíšu, vrátane dátumu, cvikov, sérií, opakovaní, váh, kardio aktivít, trvania a poznámok.</li>
+      <li><strong>Poznámky trénera</strong> – krátke poznámky, ktoré tréner zanechá klientovi, a kedy ich klient označil ako hotové.</li>
+      <li><strong>Jednotka hmotnosti</strong> – či klient zapisuje váhy v kilogramoch alebo librách.</li>
+      <li><strong>Prihlasovacie tokeny</strong> – krátkodobé tokeny relácie, vďaka ktorým zostávaš prihlásený. Ukladajú sa šifrovane v tvojom zariadení.</li>
+      <li><strong>Technické záznamy</strong> – náš poskytovateľ hostingu automaticky zaznamenáva technické údaje, ako sú IP adresy a časy požiadaviek, keď aplikácia komunikuje s našimi servermi, kvôli zabezpečeniu a riešeniu problémov.</li>
+    </ul>
+    <p style="margin-top:10px;">Záznamy tréningov môžu prezradiť informácie o tvojom zdraví a kondícii. Tieto údaje spracúvame len kvôli koučovacím funkciám aplikácie a len s tvojím súhlasom, ktorý dávaš ich zadaním.</p>
+
+    <h3>Aké údaje NEZHROMAŽĎUJEME</h3>
+    <ul>
+      <li>Nepristupujeme k tvojej polohe, kontaktom, fotoaparátu, fotkám ani mikrofónu.</li>
+      <li>Nepoužívame reklamné ani analytické SDK a nesledujeme tvoju aktivitu v iných aplikáciách alebo na weboch.</li>
+      <li>Nezhromažďujeme údaje o platobných kartách ani bankové údaje. Platby medzi trénerom a klientom prebiehajú mimo aplikácie.</li>
+      <li>Tvoje osobné údaje nepredávame, neprenajímame ani ich nezdieľame s tretími stranami na marketingové účely.</li>
+    </ul>
+
+    <h3>Kto vidí tvoje údaje</h3>
+    <ul>
+      <li><strong>Ak si klient</strong>, každý tréner, s ktorým si prepojený, vidí tvoje meno, e-mailovú adresu, plány, ktoré ti priradil, tvoje záznamy tréningov a či si splnil jeho poznámky.</li>
+      <li><strong>Ak si tréner</strong>, tvoje meno a plány, ktoré priradíš, vidia klienti, ktorým ich priradíš.</li>
+      <li>Nikto iný v aplikácii tvoje údaje nevidí. Prístup sa kontroluje na serveri pri každej požiadavke.</li>
+    </ul>
+
+    <h3>Ako tvoje údaje používame</h3>
+    <ul>
+      <li>Na vytvorenie a zabezpečenie tvojho účtu a na udržanie prihlásenia.</li>
+      <li>Na odosielanie pozvánok, potvrdzovacích e-mailov a e-mailov k heslu.</li>
+      <li>Na ukladanie, synchronizáciu a zobrazovanie plánov a záznamov medzi trénermi a ich klientmi.</li>
+      <li>Na zabezpečenie služby a riešenie technických problémov.</li>
+    </ul>
+
+    <h3>Právne základy (GDPR)</h3>
+    <ul>
+      <li><strong>Plnenie zmluvy</strong> (čl. 6 ods. 1 písm. b GDPR) – poskytovanie aplikácie a tvojho účtu.</li>
+      <li><strong>Súhlas</strong> (čl. 6 ods. 1 písm. a a čl. 9 ods. 2 písm. a GDPR) – záznamy tréningov, ktoré môžu obsahovať údaje o zdraví. Súhlas môžeš kedykoľvek odvolať vymazaním údajov alebo účtu.</li>
+      <li><strong>Oprávnené záujmy</strong> (čl. 6 ods. 1 písm. f GDPR) – zabezpečenie a technické záznamy.</li>
+      <li>Tréneri, ktorí zadajú meno a e-mail klienta, zodpovedajú za to, že na to majú právny základ – zvyčajne svoj existujúci koučovací vzťah s klientom.</li>
+    </ul>
+
+    <h3>Služby tretích strán</h3>
+    <p>Aplikácia využíva týchto poskytovateľov služieb, z ktorých každý sa riadi vlastnými zásadami ochrany osobných údajov:</p>
+    <ul>
+      <li><strong>Supabase</strong> (Supabase, Inc.) – hosting databázy, overovanie používateľov, serverové funkcie a systémové e-maily (pozvánky, potvrdenia, obnovenie hesla). Všetky vyššie opísané údaje aplikácie sú uložené v Supabase na serveroch v EÚ (Írsko).</li>
+      <li><strong>Google Play</strong> (Google LLC) – distribúcia aplikácie pre Android.</li>
+      <li><strong>Apple</strong> (Apple Inc.) – distribúcia aplikácie pre iPhone.</li>
+    </ul>
+    <p style="margin-top:10px;">Ak poskytovateľ spracúva údaje mimo Európskeho hospodárskeho priestoru, prenos je chránený štandardnými zmluvnými doložkami Európskej komisie alebo rovnocennou zárukou.</p>
+
+    <h3>Doba uchovávania a vymazanie</h3>
+    <ul>
+      <li>Tvoje údaje uchovávame, kým máš účet.</li>
+      <li>Keď tréner odoberie klienta, vymažú sa plány, ktoré preň vytvoril. Ak klient nie je prepojený so žiadnym iným trénerom, vymaže sa aj profil klienta a všetky jeho záznamy tréningov a poznámky.</li>
+      <li>Na vymazanie účtu a všetkých súvisiacich údajov použi <a href="/account-deletion.html">stránku na vymazanie účtu</a> alebo nás kontaktuj na adrese nižšie. Vymazanie prebehne do 30 dní.</li>
+    </ul>
+
+    <h3>Tvoje práva</h3>
+    <p>Podľa GDPR máš právo na prístup, opravu, vymazanie, obmedzenie spracúvania a prenosnosť svojich údajov, právo namietať proti spracúvaniu a právo kedykoľvek odvolať súhlas. Tieto práva uplatníš na adrese nižšie. Máš tiež právo podať sťažnosť dozornému orgánu pre ochranu osobných údajov.</p>
+
+    <h3>Ochrana súkromia detí</h3>
+    <p>Aplikácia nie je určená deťom mladším ako 16 rokov. Vedome nezhromažďujeme osobné údaje detí.</p>
+
+    <h3>Zmeny týchto zásad</h3>
+    <p>Tieto zásady môžeme z času na čas aktualizovať. Dátum nižšie potom upravíme. Ak aplikáciu po zmenách ďalej používaš, znamená to súhlas.</p>
+
+    <p class="effective-date">Platné od: 6. októbra 2026</p>
+  </section>
+
+  <!-- Health Disclaimer -->
+  <section class="legal-card" id="health-disclaimer">
+    <h2>⚕️ Upozornenie k zdraviu a fitness</h2>
+
+    <p>CoachIn1 je <strong>nástroj na komunikáciu a plánovanie</strong> medzi trénermi a ich klientmi. Nie je to zdravotnícka pomôcka a žiadna informácia v aplikácii nepredstavuje lekársku radu, diagnózu ani liečbu.</p>
+
+    <div class="warning-box">
+      ⚠️ Skôr než začneš s novým jedálničkom alebo tréningovým programom, poraď sa s kvalifikovaným zdravotníkom – najmä ak máš alebo máš podozrenie na zdravotné problémy, si tehotná alebo užívaš lieky.
+    </div>
+
+    <h3>Tréneri sú nezávislí</h3>
+    <p>Tréneri, ktorí aplikáciu používajú, sú nezávislí od Micro Macro Nutri Labs. Trénerov nezamestnávame, nepreverujeme ani neoverujeme ich kvalifikáciu a nezodpovedáme za plány, rady ani obsah, ktoré poskytujú. Každý koučovací vzťah, vrátane poplatkov, je výlučne medzi trénerom a klientom.</p>
+
+    <h3>Žiadna zodpovednosť za zdravotné následky</h3>
+    <p>V najširšom rozsahu povolenom zákonom nezodpovedajú Micro Macro Nutri Labs a jej vývojári za žiadne priame, nepriame, náhodné ani následné škody vzniknuté:</p>
+    <ul>
+      <li>dodržiavaním jedálničkov alebo tréningových plánov vytvorených v aplikácii,</li>
+      <li>nepresnosťami v nutričných hodnotách alebo iných údajoch zadaných trénermi či klientmi,</li>
+      <li>zraneniami alebo zdravotnými problémami v dôsledku cvičenia alebo zmeny stravy,</li>
+      <li>akýmkoľvek používaním či zneužitím aplikácie.</li>
+    </ul>
+  </section>
+
+  <!-- Terms of Use -->
+  <section class="legal-card" id="terms-of-use">
+    <h2>📋 Podmienky používania</h2>
+
+    <p>Stiahnutím alebo používaním CoachIn1 súhlasíš s týmito podmienkami. Ak nesúhlasíš, aplikáciu prosím odinštaluj.</p>
+
+    <h3>Účty</h3>
+    <p>Tréneri si môžu účet zaregistrovať sami. Klientske účty vznikajú na pozvánku trénera. Zodpovedáš za utajenie svojich prihlasovacích údajov a za všetku činnosť pod svojím účtom.</p>
+
+    <h3>Povinnosti trénerov</h3>
+    <ul>
+      <li>Pozývaj len ľudí, ktorí súhlasili s tým, že ich budeš koučovať a že sa ich údaje budú spracúvať v aplikácii.</li>
+      <li>Za plány a rady, ktoré poskytuješ, a za dodržiavanie profesijných pravidiel, ktoré sa na teba vzťahujú, zodpovedáš výlučne ty.</li>
+      <li>Poplatky a zmluvy s tvojimi klientmi sú mimo aplikácie a sú tvojou vlastnou zodpovednosťou.</li>
+    </ul>
+
+    <h3>Prijateľné používanie</h3>
+    <p>Aplikáciu nesmieš používať na nič protiprávne, nahrávať obsah porušujúci práva iných, pokúšať sa získať prístup k údajom používateľov, s ktorými nie si prepojený, ani narúšať prevádzku aplikácie. Aplikáciu nesmieš spätne analyzovať, kopírovať ani ďalej šíriť.</p>
+
+    <h3>Tvoj obsah</h3>
+    <p>Plány, záznamy a ďalší obsah, ktorý zadáš, zostávajú tvoje. Udeľuješ nám právo tento obsah ukladať a zobrazovať používateľom, s ktorými ho zdieľaš, výlučne na účel prevádzky aplikácie.</p>
+
+    <h3>Ukončenie</h3>
+    <p>Aplikáciu môžeš kedykoľvek prestať používať a vymazať svoj účet. Účty, ktoré porušujú tieto podmienky, môžeme pozastaviť alebo zrušiť.</p>
+
+    <h3>Obmedzenie zodpovednosti</h3>
+    <p>Aplikácia sa poskytuje <strong>„tak, ako je“</strong>, bez akýchkoľvek výslovných či predpokladaných záruk. Micro Macro Nutri Labs nezodpovedá za stratu dát, výpadky služby ani iné škody vzniknuté používaním aplikácie, s výnimkou prípadov, keď zodpovednosť nemožno zo zákona vylúčiť (napríklad pri úmysle alebo hrubej nedbanlivosti).</p>
+
+    <h3>Rozhodné právo</h3>
+    <p>Tieto podmienky sa riadia právom Spolkovej republiky Nemecko s vylúčením kolíznych noriem. Kogentné predpisy na ochranu spotrebiteľa v krajine tvojho bydliska zostávajú nedotknuté.</p>
+
+    <p class="effective-date">Platné od: 5. októbra 2026</p>
+  </section>
+
+  <!-- Impressum -->
+  <section class="legal-card" id="impressum">
+    <h2>📄 Impressum</h2>
+    <p style="margin-bottom: 10px;">Inhalte gemäß §5 DDG</p>
+    <p>
+      <strong>Martin Fabian</strong><br />
+      c/o IP-Management #9200<br />
+      Ludwig-Erhard-Straße 18<br />
+      20459 Hamburg
+    </p>
+    <h3>Kontakt</h3>
+    <p>
+      E-mail: <a href="mailto:martin.fabian2005@gmail.com">martin.fabian2005@gmail.com</a><br />
+      Telefón: <a href="tel:+4917663469972">017663469972</a>
+    </p>
+  </section>
+
+  <!-- Contact -->
+  <section class="legal-card" id="contact">
+    <h2>✉️ Kontakt</h2>
+    <p>So žiadosťami o ochranu údajov, vymazanie účtu alebo právnymi otázkami k CoachIn1 sa obracaj na:</p>
+    <p style="margin-top: 12px;">
+      <strong>Micro Macro Nutri Labs</strong><br />
+      <a href="mailto:info@micromacronutrilabs.com?subject=CoachIn1">info@micromacronutrilabs.com</a>
+    </p>
+  </section>
+</div>
+
+
+<footer>
+  <p style="margin-bottom:8px;">
+    <a href="#privacy-policy">Ochrana údajov</a> &nbsp;·&nbsp;
+    <a href="#terms-of-use">Podmienky používania</a> &nbsp;·&nbsp;
+    <a href="/account-deletion.html">Vymazať účet</a> &nbsp;·&nbsp;
+    <a href="mailto:info@micromacronutrilabs.com?subject=CoachIn1">Kontakt</a>
+  </p>
+  <p style="margin-bottom:8px;">Aj od nás: <a href="https://micromacronutrilabs.com/">Micro Macro Tracker</a></p>
+  &copy; 2026 Micro Macro Nutri Labs
+</footer>
+
+<script>
+  // Remember a language the visitor picked (menu, or the link to the binding English legal texts), so the English
+  // page stops redirecting by browser language.
+  document.querySelectorAll('a[hreflang]').forEach(function (a) {
+    a.addEventListener('click', function () {
+      try { localStorage.setItem('coachin1-lang', a.getAttribute('hreflang')); } catch (e) {}
+    });
+  });
+</script>
+
+</body>
+</html>
