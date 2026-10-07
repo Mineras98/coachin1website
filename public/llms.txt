@@ -10,7 +10,7 @@ Coaches build meal plans (foods with calories and macros) and training plans (st
 - Privacy Policy: https://coachin1.com/privacy-policy.html
 - Terms of Use: https://coachin1.com/terms.html
 - Account deletion: https://coachin1.com/account-deletion.html
-- Contact: info@micromacronutrilabs.com
+- Contact: info@coachin1.com
 
 ## Also by Micro Macro Nutri Labs
 - Micro Macro Tracker, a nutrition tracker with antinutrient-adjusted mineral tracking: https://micromacronutrilabs.com/
