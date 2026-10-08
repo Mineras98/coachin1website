@@ -4,8 +4,8 @@
 
 Coaches build meal plans (foods with calories and macros) and training plans (strength and cardio), invite clients by email and assign plans; clients log workouts set by set (kg or lb) that their coach can review, and coaches leave notes that clients tick off. Nutrition and training are included in one app (no paid nutrition add-on), and data is stored in the EU (Ireland).
 
-- Availability: early access on Android and iPhone. Free during early access for the first 20 coaches.
-- Pricing (after early access): coaches pay by number of clients; clients use the app for free. Free up to 2 clients; Starter €9.99/month (up to 10 clients), Pro €29.99/month (up to 30), Studio €49.99/month (up to 75); yearly billing gets 2 months free; 14-day free trial on paid plans. The first 100 paying coaches, including all early-access coaches, keep 50% off while subscribed. Details: https://coachin1.com/#pricing
+- Availability: early access on Android and iPhone. Free during early access; coaches who join during early access keep 50% off for as long as they stay subscribed.
+- Pricing (after early access): coaches pay by number of clients; clients use the app for free. Free up to 2 clients; Starter €9.99/month (up to 10 clients), Pro €29.99/month (up to 30), Studio €49.99/month (up to 75); yearly billing gets 2 months free; 14-day free trial on paid plans. Details: https://coachin1.com/#pricing
 - Website: https://coachin1.com/ (also in German: https://coachin1.com/de/, Czech: https://coachin1.com/cs/, Slovak: https://coachin1.com/sk/)
 - Privacy Policy: https://coachin1.com/privacy-policy.html
 - Terms of Use: https://coachin1.com/terms.html
