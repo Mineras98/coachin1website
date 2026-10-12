@@ -80,6 +80,8 @@ nav .container { height: 60px; display: flex; align-items: center; justify-conte
 .nav-links a:not(.btn):hover { color: var(--text); text-decoration: none; }
 
 @media (max-width: 720px) { .nav-links .hide-mobile { display: none; } }
+.nav-links a { white-space: nowrap; }
+@media (max-width: 1000px) { .nav-links .hide-narrow { display: none; } }
 
 /* ── Phone mockup ────────────────────────────────── */
 .phone {
