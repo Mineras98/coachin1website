@@ -57,6 +57,10 @@ a:hover { text-decoration: underline; }
 .btn-primary:hover { background: var(--lime-dark); }
 .btn-ghost { color: var(--heading); border: 1px solid var(--border); background: rgba(255,255,255,0.03); }
 .btn-ghost:hover { border-color: #3a6656; }
+/* The way into the web app: second only to the main call to action. */
+.btn-web { color: var(--lime); border: 1.5px solid var(--lime); background: rgba(190,242,100,0.08); }
+.btn-web:hover { background: rgba(190,242,100,0.16); }
+.btn-web::after { content: "\2197"; margin-left: 6px; }
 .btn-sm { padding: 8px 14px; font-size: 0.85rem; border-radius: 10px; }
 
 /* ── Nav ─────────────────────────────────────────── */
@@ -561,3 +565,7 @@ footer a:hover { color: var(--text); }
 /* The cards are narrow, so the button goes under its step. */
 .platform .join-steps li { flex-wrap: wrap; }
 .platform .join-steps .btn { width: 100%; text-align: center; }
+
+/* The web app: nothing to install, so it comes first and spans both phone cards. */
+.platform-web { grid-column: 1 / -1; border-color: var(--lime); }
+.platform-tag { margin-left: 4px; padding: 2px 8px; border-radius: 999px; background: var(--lime); color: #0b1a16; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; }
