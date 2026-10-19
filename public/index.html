@@ -712,7 +712,9 @@
   // app, so a sign-up there is still tied to the ad (the app's index.html reads them). Only the links change;
   // nothing is stored on the device.
   (function () {
-    var params = new URLSearchParams(location.search), keep = [];
+    // Also after a section link's #, e.g. #features?gclid=…, in case the click id is added there.
+    var hash = location.hash.replace(/^#[^?&]*[?&]?/, '');
+    var params = new URLSearchParams(location.search.slice(1) + '&' + hash), keep = [];
     ['gclid', 'gbraid', 'wbraid', 'utm_source', 'utm_medium', 'utm_campaign'].forEach(function (key) {
       if (params.get(key)) keep.push([key, params.get(key)]);
     });
