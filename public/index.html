@@ -27,7 +27,7 @@
             if (code in pages) { lang = code; break; }
           }
         }
-        if (lang && pages[lang]) location.replace(pages[lang] + location.hash);
+        if (lang && pages[lang]) location.replace(pages[lang] + location.search + location.hash);
       } catch (e) {}
     })();
   </script>
@@ -705,6 +705,24 @@
       try { localStorage.setItem('coachin1-lang', a.getAttribute('hreflang')); } catch (e) {}
     });
   });
+</script>
+
+<script>
+  // A visitor from an ad (gclid, gbraid, wbraid) or a post (utm_*) keeps those parameters on the links into the web
+  // app, so a sign-up there is still tied to the ad (the app's index.html reads them). Only the links change;
+  // nothing is stored on the device.
+  (function () {
+    var params = new URLSearchParams(location.search), keep = [];
+    ['gclid', 'gbraid', 'wbraid', 'utm_source', 'utm_medium', 'utm_campaign'].forEach(function (key) {
+      if (params.get(key)) keep.push([key, params.get(key)]);
+    });
+    if (!keep.length) return;
+    document.querySelectorAll('a[href^="https://app.coachin1.com"]').forEach(function (a) {
+      var url = new URL(a.href);
+      keep.forEach(function (pair) { url.searchParams.set(pair[0], pair[1]); });
+      a.href = url.toString();
+    });
+  })();
 </script>
 
 </body>
