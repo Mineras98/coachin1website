@@ -1,12 +1,15 @@
 # CoachIn1
 
-> CoachIn1 is a coaching app for nutrition and fitness coaches and their clients, by Micro Macro Nutri Labs (Germany).
+> CoachIn1 is a marketplace for training and nutrition plans from independent coaches, by Micro Macro Nutri Labs (Germany).
 
-Coaches build meal plans (foods with calories and macros) and training plans (strength and cardio), invite clients by email and assign plans; clients log workouts set by set (kg or lb) that their coach can review, and coaches leave notes that clients tick off. Nutrition and training are included in one app (no paid nutrition add-on), and data is stored in the EU (Ireland).
+Coaches sell training plans (strength and cardio sessions with exercise pictures), nutrition plans (meals with calories and macros) and monthly coaching. Buyers follow the plan in the app, log every set (kg or lb), track body weight and progress photos, chat with the coach, and leave reviews with optional before and after photos. Data is stored in the EU (Ireland).
 
-- Availability: early access on the web (https://app.coachin1.com, nothing to install), Android and iPhone. Free during early access; coaches who join during early access keep 50% off for as long as they stay subscribed.
-- Pricing (after early access): coaches pay by number of clients; clients use the app for free. Free up to 2 clients; Starter €9.99/month (up to 10 clients), Pro €29.99/month (up to 30), Studio €49.99/month (up to 75); yearly billing gets 2 months free; 14-day free trial on paid plans. Details: https://coachin1.com/#pricing
-- Website: https://coachin1.com/ (also in German: https://coachin1.com/de/, Czech: https://coachin1.com/cs/, Slovak: https://coachin1.com/sk/)
+- Availability: web app at https://app.coachin1.com (nothing to install). The iPhone and Android apps get the marketplace with their next update.
+- Buying: prices are set by the coach, €2.99–€199.99 one-off or €4.99–€199.99 a month for coaching, VAT included. Paid through the App Store or Google Play in the apps, and through Paddle (Merchant of Record) on the web. One-off plans stay in the buyer's account; monthly coaching runs until cancelled.
+- Selling: free, no monthly fee. From each sale, after VAT and the store's fee (15% App Store / Google Play, 5% + €0.50 Paddle), CoachIn1 keeps 20% when the buyer came through the coach's own link and 30% when the buyer found the coach on CoachIn1. Coaches are paid monthly by bank transfer with a self-billing statement. Plans can be imported from Excel or CSV.
+- Website: https://coachin1.com/ (also in German: https://coachin1.com/de/, Czech: https://coachin1.com/cs/, Slovak: https://coachin1.com/sk/). Fees: https://coachin1.com/#pricing
+- Terms for buyers: https://app.coachin1.com/legal/buyer-terms
+- Terms for coaches: https://app.coachin1.com/legal/seller-terms
 - Privacy Policy: https://coachin1.com/privacy-policy.html
 - Terms of Use: https://coachin1.com/terms.html
 - Account deletion: https://coachin1.com/account-deletion.html
